@@ -1,0 +1,38 @@
+body {
+  min-height: 200px;
+}
+nav {
+  background-color: #08107c;
+}
+.jumbotron {
+  padding-top: 6rem;
+  background-image: url(img/jumbotron.jpg);
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -65px;
+  color: #eaeaea;
+}
+
+.jumbotron h1 {
+  padding-top: 80px;
+}
+
+.jumbotron h1,
+.jumbotron p {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+  font-weight: bold;
+}
+
+.content {
+  background-color: #f2f4f7;
+  padding-top: 5rem;
+}
+
+.layanan {
+  background-color: #9abdf5;
+  padding-bottom: 4rem;
+}
+footer {
+  background-color: #08107c;
+}
