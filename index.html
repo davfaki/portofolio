@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="Portofolio web Ahmad Davfa Maulana, Junior Web Programmer dan UI/UX enthusiast. Berisi profil, keahlian, sertifikasi, dan proyek website Teknisi Baik.">
+  <meta property="og:title" content="Ahmad Davfa Maulana — 3D Web Portfolio">
+  <meta property="og:description" content="Portofolio web interaktif dengan efek 3D, profil CV, dan showcase proyek Teknisi Baik.">
+  <meta property="og:type" content="website">
+  <title>Ahmad Davfa Maulana — 3D Web Portfolio</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas class="space-canvas" id="spaceCanvas" aria-hidden="true"></canvas>
+
+  <div class="cursor-light" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="Kembali ke beranda">
+        <img src="assets/img/logo.svg" alt="" width="42" height="42">
+        <span>Ahmad Davfa</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="mainNav">
+        <a href="#about">Profil</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse-dot"></span> Available for Web Projects</p>
+          <h1>
+            Ahmad Davfa Maulana
+            <span>Junior Web Programmer & UI/UX Designer.</span>
+          </h1>
+          <p class="hero-lead">
+            Saya membangun website responsif dengan kombinasi logika pemrograman,
+            database, dan desain antarmuka modern yang berpusat pada pengguna.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="#projects">Lihat Proyek</a>
+            <a class="btn btn-ghost magnetic" href="assets/docs/Ahmad-Davfa-Maulana-CV.pdf" download>Download CV</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Ringkasan portofolio">
+            <div>
+              <strong>2025</strong>
+              <span>LSP Junior Web Programmer</span>
+            </div>
+            <div>
+              <strong>S.Kom</strong>
+              <span>Informatika Gunadarma</span>
+            </div>
+            <div>
+              <strong>CRUD</strong>
+              <span>PHP, MySQL, Auth, Order Flow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Foto profil Ahmad Davfa Maulana">
+          <div class="visual-depth">
+            <div class="orb orb-a"></div>
+            <div class="orb orb-b"></div>
+            <div class="avatar-card tilt-card">
+              <div class="avatar-glow"></div>
+              <picture>
+                <source srcset="assets/img/profile-ahmad-davfa.webp" type="image/webp">
+                <img src="assets/img/profile-ahmad-davfa.png" alt="Foto Ahmad Davfa Maulana" width="411" height="607">
+              </picture>
+              <div class="avatar-platform"></div>
+            </div>
+
+            <div class="floating-chip chip-html">HTML5</div>
+            <div class="floating-chip chip-js">JavaScript</div>
+            <div class="floating-chip chip-mysql">MySQL</div>
+            <div class="floating-chip chip-ui">UI/UX</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <span></span>
+        <small>Scroll</small>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container split-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Profil Profesional</p>
+          <h2>Mengubah ide menjadi website yang rapi, interaktif, dan mudah dipakai.</h2>
+        </div>
+
+        <div class="glass-panel tilt-card reveal">
+          <p>
+            Lulusan Sarjana Informatika dari Universitas Gunadarma dengan spesialisasi
+            pengembangan web dan desain antarmuka pengguna. Saya memiliki landasan kuat
+            dalam logika pemrograman, estetika desain, dan pengalaman membangun aplikasi
+            web responsif menggunakan teknologi modern.
+          </p>
+          <div class="contact-strip">
+            <a href="mailto:adavfa@gmail.com">adavfa@gmail.com</a>
+            <a href="tel:+628124459454">08124459454</a>
+            <span>Depok, Indonesia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Tech Stack & Design Stack</p>
+          <h2>Skill utama untuk membangun web dari tampilan sampai database.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card tilt-card reveal">
+            <span class="card-icon">⌘</span>
+            <h3>Pemrograman</h3>
+            <div class="tag-cloud">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python</span><span>Golang</span><span>MySQL</span>
+            </div>
+          </article>
+
+          <article class="skill-card tilt-card reveal">
+            <span class="card-icon">◈</span>
+            <h3>Desain UI/UX</h3>
+            <div class="tag-cloud">
+              <span>Adobe Illustrator</span><span>UI / UX Design</span><span>Icon Design</span><span>Wireframing</span><span>Prototyping</span>
+            </div>
+          </article>
+
+          <article class="skill-card tilt-card reveal">
+            <span class="card-icon">✦</span>
+            <h3>Fokus Pengembangan</h3>
+            <div class="mini-list">
+              <p><strong>Front-end Development</strong> — tampilan interaktif dan dinamis.</p>
+              <p><strong>User Research</strong> — solusi desain sesuai kebutuhan pengguna.</p>
+              <p><strong>Modern Coding</strong> — eksplorasi framework dan workflow baru.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Featured Project</p>
+          <h2>Teknisi Baik — platform pemesanan jasa teknisi online.</h2>
+          <p class="section-desc">
+            Website ini menampilkan landing page, sistem login/registrasi, order perbaikan,
+            dashboard teknisi, manajemen tipe perbaikan, dan status penanganan order.
+          </p>
+        </div>
+
+        <div class="project-showcase reveal">
+          <div class="project-panel tilt-card">
+            <div class="browser-top">
+              <span></span><span></span><span></span>
+              <p>teknisibaik.local</p>
+            </div>
+            <img src="assets/img/projects/teknisi-baik-landing.webp" alt="Landing page website Teknisi Baik" loading="lazy">
+          </div>
+
+          <div class="project-info glass-panel">
+            <p class="project-label">Full-stack Web Application</p>
+            <h3>Teknisi Baik</h3>
+            <p>
+              Aplikasi layanan perbaikan untuk mempertemukan pelanggan dengan teknisi.
+              Alurnya mencakup pemilihan layanan, pengisian form order, dashboard teknisi,
+              pengambilan order, pembatalan, penyelesaian, dan CRUD tipe perbaikan.
+            </p>
+            <div class="tag-cloud compact">
+              <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>CRUD</span><span>Auth</span><span>Role User</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cube-wrap reveal" aria-label="Galeri 3D screenshot proyek Teknisi Baik">
+          <div class="cube-scene">
+            <div class="screenshot-cube" aria-hidden="true">
+              <figure class="face face-front"><img src="assets/img/projects/teknisi-baik-landing-thumb.webp" alt=""></figure>
+              <figure class="face face-back"><img src="assets/img/projects/teknisi-baik-form-order-thumb.webp" alt=""></figure>
+              <figure class="face face-right"><img src="assets/img/projects/teknisi-baik-dashboard-teknisi-thumb.webp" alt=""></figure>
+              <figure class="face face-left"><img src="assets/img/projects/teknisi-baik-detail-order-thumb.webp" alt=""></figure>
+              <figure class="face face-top"><img src="assets/img/projects/teknisi-baik-pilih-layanan-thumb.webp" alt=""></figure>
+              <figure class="face face-bottom"><img src="assets/img/projects/teknisi-baik-manajemen-tipe-thumb.webp" alt=""></figure>
+            </div>
+          </div>
+          <div class="cube-caption">
+            <h3>3D Screenshot Cube</h3>
+            <p>Preview interaktif dari halaman penting aplikasi: landing page, pemilihan layanan, form order, dashboard, CRUD, dan detail order.</p>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card tilt-card reveal">
+            <span>01</span>
+            <h3>Landing Page</h3>
+            <p>Halaman pengenalan layanan dengan navbar, hero image, tentang kami, dan galeri layanan.</p>
+          </article>
+          <article class="feature-card tilt-card reveal">
+            <span>02</span>
+            <h3>Order Flow</h3>
+            <p>Pelanggan memilih jenis layanan dan mengisi form permintaan perbaikan secara terstruktur.</p>
+          </article>
+          <article class="feature-card tilt-card reveal">
+            <span>03</span>
+            <h3>Teknisi Dashboard</h3>
+            <p>Teknisi dapat melihat order masuk, mengambil order, menyelesaikan, atau membatalkan order.</p>
+          </article>
+          <article class="feature-card tilt-card reveal">
+            <span>04</span>
+            <h3>CRUD Layanan</h3>
+            <p>Admin/teknisi mengelola tipe perbaikan, harga, ikon layanan, dan daftar item yang tersedia.</p>
+          </article>
+        </div>
+
+        <div class="gallery-grid" aria-label="Galeri screenshot proyek">
+          <button class="gallery-item tilt-card reveal" type="button" data-full="assets/img/projects/teknisi-baik-landing.webp" data-title="Landing Page Teknisi Baik">
+            <img src="assets/img/projects/teknisi-baik-landing-thumb.webp" alt="Screenshot landing page Teknisi Baik" loading="lazy">
+            <span>Landing Page</span>
+          </button>
+          <button class="gallery-item tilt-card reveal" type="button" data-full="assets/img/projects/teknisi-baik-pilih-layanan.webp" data-title="Pemilihan Jenis Perbaikan">
+            <img src="assets/img/projects/teknisi-baik-pilih-layanan-thumb.webp" alt="Screenshot halaman pilih jenis perbaikan" loading="lazy">
+            <span>Pilih Layanan</span>
+          </button>
+          <button class="gallery-item tilt-card reveal" type="button" data-full="assets/img/projects/teknisi-baik-form-order.webp" data-title="Form Permintaan Perbaikan">
+            <img src="assets/img/projects/teknisi-baik-form-order-thumb.webp" alt="Screenshot form permintaan perbaikan" loading="lazy">
+            <span>Form Order</span>
+          </button>
+          <button class="gallery-item tilt-card reveal" type="button" data-full="assets/img/projects/teknisi-baik-dashboard-teknisi.webp" data-title="Dashboard Teknisi & Order Masuk">
+            <img src="assets/img/projects/teknisi-baik-dashboard-teknisi-thumb.webp" alt="Screenshot dashboard teknisi" loading="lazy">
+            <span>Dashboard</span>
+          </button>
+          <button class="gallery-item tilt-card reveal" type="button" data-full="assets/img/projects/teknisi-baik-manajemen-tipe.webp" data-title="Manajemen Tipe Perbaikan">
+            <img src="assets/img/projects/teknisi-baik-manajemen-tipe-thumb.webp" alt="Screenshot manajemen tipe perbaikan" loading="lazy">
+            <span>CRUD Tipe</span>
+          </button>
+          <button class="gallery-item tilt-card reveal" type="button" data-full="assets/img/projects/teknisi-baik-detail-order.webp" data-title="Detail Order Teknisi">
+            <img src="assets/img/projects/teknisi-baik-detail-order-thumb.webp" alt="Screenshot detail order teknisi" loading="lazy">
+            <span>Detail Order</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Education & Certification</p>
+          <h2>Perjalanan belajar yang mendukung pengembangan web.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card tilt-card">
+              <time>2021 — 2025</time>
+              <h3>Sarjana Komputer (S.Kom) — Informatika</h3>
+              <p>Universitas Gunadarma, Fakultas Teknik Industri. Fokus studi: pengembangan perangkat lunak, struktur data, dan desain sistem.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card tilt-card">
+              <time>2024</time>
+              <h3>Pengembangan Web Application Design</h3>
+              <p>Kursus Universitas Gunadarma tentang alur desain aplikasi web, UX, purwarupa, fungsionalitas, dan estetika visual modern.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card tilt-card">
+              <time>2025</time>
+              <h3>LSP Okupasi Junior Web Programmer</h3>
+              <p>Sertifikasi kompetensi dalam membangun aplikasi web dengan HTML, CSS, MySQL, dan fitur CRUD fungsional.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="eyebrow">Let's Connect</p>
+          <h2>Siap membangun website yang modern dan interaktif?</h2>
+          <p>
+            Hubungi saya untuk diskusi proyek web, UI/UX, atau pengembangan aplikasi berbasis database.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary magnetic" href="mailto:adavfa@gmail.com?subject=Diskusi%20Proyek%20Website&body=Halo%20Ahmad%20Davfa%2C%20saya%20ingin%20diskusi%20tentang%20proyek%20website.">Email Saya</a>
+          <a class="btn btn-ghost magnetic" href="https://wa.me/628124459454" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ahmad Davfa Maulana. Built with HTML, CSS, and JavaScript.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Preview screenshot proyek" hidden>
+    <button class="lightbox-close" type="button" aria-label="Tutup preview">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Screenshot sebelumnya">‹</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Screenshot berikutnya">›</button>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
